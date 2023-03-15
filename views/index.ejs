@@ -14,7 +14,8 @@
         </h1>
         <form action="/getprice" method="post">
             <div class="form-group container">
-                <select id="currencyList">
+                <label for="currency">Select Currency: </label>
+                <select class='form-control' id="currencyList">
                     <option value="USD" selected="selected" label="US dollar">USD</option>
                     <option value="EUR" label="Euro">EUR</option>
                     <option value="JPY" label="Japanese yen">JPY</option>
@@ -181,8 +182,20 @@
                     <option value="ZWB" label="Zimbabwean bonds">ZWB</option>
                 </select>
             </div>
+            <div class="form-group-container">
+                <label for="crypto">Select CryptoCurrency: </label>
+                <select name="" id="crypto">
+
+                </select>
+            </div>
         </form>
     </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script>
+    $.ajax({
+        method: "GET",
+        url: ""
+    })
+</script>
 </html>

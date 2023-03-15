@@ -16,3 +16,5 @@ price.getCryptoPrice('USD', 'BTC')
 .catch((err) => {
     console.log(err)
 })
+
+app.listen(5000)
